@@ -11,6 +11,7 @@ struct LandingView: View {
     
     @State var newItemDescription: String = ""
     @State var searchText = ""
+    @Environment(\.modelContext) var modelContext
     @State var todos: [TodoItem] = exampleItems
     
     var body: some View {
